@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+     <%- include('./partials/head.ejs') %> 
+
+<body>
+     <%- include('./partials/nav.ejs') %> 
+
+
+    
+     
+          <form class="form1" action="/blogs" method="POST">
+               <label id="title" class="first-name">Title</label>
+               <input type="text" id="title" name="title" required>
+               
+               <label id="imgsrc" class="first-name">Image Surce</label>
+               <input type="text" id="imgsrc" name="imgsrc" required>
+         
+               <label id="snippet" class="last-name">Snippet</label>
+               <input type="text" id="snippet" name="snippet" required>
+         
+               <label for="body">Body</label>
+               <textarea   name="body"   id="body" cols="52" rows="10"></textarea>
+
+
+               <!-- <label for="typeb">Choose a Type:</label> -->
+               <!-- <select name="typeb" id="typeb" name="opc" >
+                    <option value="tech">Tech</option>
+                    <option value="comp">COMPUTING</option>
+                    <option value="sec">SECURITY</option>
+                    <option value="mop">MOST POPULAR</option>
+               </select>
+       
+         
+               <label for="myFile">Image Blog</label>
+               <input type="file" id="myFile" name="filename"> -->
+               
+               <button>Submit</button>
+             </form>
+
+
+</body>
+</html>
